@@ -13,6 +13,6 @@ Django app for a simple links management
     ``` html
     {% get_links as links %}
     {% for link in links %}
-    <a href="{{link.url}}" title="{{link.description}}">{{link.title}}</a>
+    <a href="{{link.url}}" target="{{ link.target_blank|yesno:"_blank,_self" }}" title="{{link.description}}">{{link.title}}</a>
     {% endfor %}
     ```

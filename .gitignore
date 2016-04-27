@@ -64,3 +64,4 @@ target/
 #Aptana ide
 .project
 .pydevproject
+.settings/

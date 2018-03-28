@@ -4,7 +4,7 @@ from django.contrib import admin
 
 from adminsortable.admin import SortableAdmin
 
-from models import Category, Link
+from .models import Category, Link
 
 class LinkAdmin(SortableAdmin):
     list_display = ('title','url')

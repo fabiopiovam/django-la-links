@@ -5,7 +5,7 @@ from links.models import Link
 
 register = Library()
 
-@register.assignment_tag
+@register.simple_tag
 def get_links(category='', limit=200):
     
     try:
